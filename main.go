@@ -24,6 +24,7 @@ func checkError(err error) {
 }
 
 // the input taking function
+//usues bufio "package"
 func getInput(ask string, r *bufio.Reader) (string, error) {
 	fmt.Print(ask)
 	input, err := r.ReadString('\n')
